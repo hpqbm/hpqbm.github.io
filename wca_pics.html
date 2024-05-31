@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .gallery a {
+            border: none;
+            padding: 0;
+            display: block;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery a:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Image Gallery</h1>
+    <div class="gallery">
+        <a href="images/Yiheng.jpeg" target="_blank">
+            <img src="images/Yiheng.jpeg" alt="Thumbnail 1">
+            <figcaption>With Yiheng Wang (World No. 1 in 3X3 avg).</figcaption>
+        </a>
+        <a href="images/Tristan.jpeg" target="_blank">
+            <img src="images/Tristan.jpeg" alt="Thumbnail 2">
+            <figcaption>With Tristan Chua (World No. 2 in Megaminx, SG No. 1).</figcaption>
+        </a>
+        <a href="images/Friends.jpeg" target="_blank">
+            <img src="images/Friends.jpeg" alt="Thumbnail 3">
+            <figcaption>Making new friends from Malaysia and Spain.</figcaption>
+        </a>
+    </div>
+</body>
+</html>
