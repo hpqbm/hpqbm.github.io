@@ -52,6 +52,21 @@
 
   <body>
 
+    <script>
+      function toggleContent() {
+        const content = document.getElementById('extraContent');
+        const button = document.getElementById('toggleButton');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          button.textContent = 'Show Less';
+        } else {
+          content.style.display = 'none';
+          button.textContent = 'Show More';
+        }
+      }
+    </script>
+
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
         <a href="#" class="navbar-brand">Gopal Roy</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -326,15 +341,18 @@
             <div class="hidden row hide" id='aa6'>
               <div class="col-md-1 col-sm-1 col-1"></div>
               <div class="col md-10 col-sm-10 col-10">
-                <br>• Graduation
-                <br>• PSLE 
-                <br>• NTC - Top 3
-                <br>• NTC - Most Sustainable and Feasable 
-                <br>• SASMO - GOLD
-                <br>• DrCt - Bronze
+                <br>• <a href="images/EAGLESAward.jpeg" target="_blank">EAGLES Award</a>
+                <br>• <a href="images/NVTPSGraduation.jpeg" target="_blank">Graduated from Primary</a>
+                <br>• <a href="images/VMCGameDesign.jpeg" target="_blank">Vista Mathemetician Challenge 2024</a>
+                <br>• <a href="images/ScienceBuskers.jpeg" target="_blank">Science Buskers 2024</a>
+                <br>• <a href="images/VistaACEPilot.jpeg" target="_blank">Vista Ace Pilot - 3rd Place</a>
+                <br>• <a href="images/NTC24Top3.jpeg" target="_blank">NTC - Top 3</a>
+                <br>•  <a href="images/NTC24MostFeasable&Sustainable.jpeg" target="_blank">NTC - Most Sustainable and Feasable </a>
+                <br>• <a href="images/SASMO2024.jpeg" target="_blank">SASMO - GOLD</a>
+                <br>• <a href="images/DrCT2024.jpeg" target="_blank">DrCt - Bronze</a>
                 <br>• <a href="pdfs/APMOPSAwardStudents (2).pdf" target="_blank">APMOPS/SMOPS - Silver</a> 
-                <br>• <a href="pdfs/NTC2024.png" target="_blank">National Thinkers Challenge - (Selected among Top 15 teams in Singapore for Finals in Nov 2024)</a>
-                <br>• <a href="pdfs/NTC2024.png" target="_blank">Selected for Enrichment Programme - Chemical Potpourri (NUS High School)</a>
+                <br>• <a href="images/NTCTop15.jpeg" target="_blank">National Thinkers Challenge - (Selected among Top 15 teams in Singapore for Finals in Nov 2024)</a>
+                <br>• <a href="images/MicecraftEDU2024.jpeg" target="_blank">MEQ 2024 - Master of the Block & Digital Architect</a>
                 <br>• <a href="pdfs/Singapore Newcomers 2024_Gopal.pdf" target="_blank">Singapore Newcomers 2024</a>
                 
               </div>
@@ -472,22 +490,20 @@
         <div class="heading-section text-center ftco-animate">
             <h2 class="mb-4"> Selected Projects</h2>
             <p> </p>
-
         </div>
 
         <div class="row">
 
-
-<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
             <div class="item">
               <div class="image">
                 <div class="icontainer">
                   <img src="images/img1.jpg" alt="Avatar" class="img">
                   <div class="overlay">
                     <div class="text">
-                      <br>• I built a chatbot for students with less hallucination
-                      <br>• I build an interface for questions to be generatedbased on a chapter
-                      <br>• <a href="https://github.com/hpqbm/NTC-2024" target="_blank"> Check it out in this git repository </a>
+                      <br>• I built a chatbot streamlit application for students to ask questions based on their class
+                      <br>• I built a streamlit app which teachers can use to generate questions and model answers by uploading a book chapter or class notes.
+                      <br>• <a href="pdfs/NTC%202024%20Poster.pdf" target="_blank"> Check out the poster in my git repository </a>
                     </div>
                   </div>
                 </div>
@@ -580,27 +596,27 @@
             </div>
           </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
-              <div class="item">
-                <div class="image">
-                  <div class="icontainer">
-                    <img src="images/img1.jpg" alt="Avatar" class="img">
-                    <div class="overlay bottom">
-                      <div class="text">This is similar to the game Geometry Dash. The only differnce is that 
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
+            <div class="item">
+              <div class="image">
+                <div class="icontainer">
+                  <img src="images/img1.jpg" alt="Avatar" class="img">
+                  <div class="overlay bottom">
+                    <div class="text">This is similar to the game Geometry Dash. The only differnce is that 
                         every time the player hits a spike they need to solve a math question to try again. 
                         Check it out <a href="https://scratch.mit.edu/studios/35281200" target="_blank">here</a>
-                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="text2">
+              </div>
+              <div class="text2">
                   <h5>Math Dash (Vista Math Challenge)2024</h5>
-                </div>
               </div>
             </div>
-
-          
           </div>
+        </div>
+
+        <div class="row hide" id="moreprojects">
 
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
             <div class="item">
@@ -617,9 +633,6 @@
               </div>
             </div>
           </div>
-
-
-
 
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
             <div class="item">
@@ -678,7 +691,7 @@
                 <div class="icontainer">
                   <img src="images/img1.jpg" alt="Avatar" class="img">
                   <div class="overlay bottom">
-                    <div class="text">This is game in python where the player guesses a number from 1 to 100 thought by the computer.
+                    <div class="text">This is game in python where the player guesses a number from 1 to 100 thought by the computer.</div>
                   </div>
                 </div>
               </div>
@@ -689,14 +702,45 @@
           </div>
 
 
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
+            <div class="item">
+              <div class="image">
+                <div class="icontainer">
+                  <img src="images/img1.jpg" alt="Avatar" class="img">
+                  <div class="overlay bottom">
+                    <div class="text">
+                      <br>• This is a translator for some common phrases in common languages
+                      <br>• <a href="https://scratch.mit.edu/projects/525229931/" target="_blank">Check it out!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text2">
+                <h5>Translator</h5>
+              </div>
+            </div>
+          </div>
 
-          
 
-
-
-
-
-
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 outerbox">
+            <div class="item">
+              <div class="image">
+                <div class="icontainer">
+                  <img src="images/img1.jpg" alt="Avatar" class="img">
+                  <div class="overlay bottom">
+                    <div class="text">
+                      <br>• This is a game in which you can draw (created in scratch)
+                      <br>• <a href="https://scratch.mit.edu/projects/524310460/" target="_blank">Check it out!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text2">
+                <h5>Paint All</h5>
+              </div>
+            </div>
+          </div>
+        
         </div>
 
         <div class="text-center">

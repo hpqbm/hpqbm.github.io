@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show More / Show Less</title>
+  <style>
+    .content {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+    button {
+      cursor: pointer;
+      padding: 8px 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <p>This is the visible content.</p>
+    <div class="content" id="extraContent">
+      <p>This is the hidden content that becomes visible when you click "Show More".</p>
+    </div>
+    <button id="toggleButton" onclick="toggleContent()">Show More</button>
+  </div>
+
+  <script>
+    function toggleContent() {
+      const content = document.getElementById('extraContent');
+      const button = document.getElementById('toggleButton');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        button.textContent = 'Show Less';
+      } else {
+        content.style.display = 'none';
+        button.textContent = 'Show More';
+      }
+    }
+  </script>
+
+</body>
+</html>
